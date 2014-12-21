@@ -1,1 +1,1 @@
-We should really start using NPM instead of Bower; because in instances like superagent it just makes sense to have them together and not client- or server- specific.
+1. npm i; bower i; 2. node app.js; 3. open two tabs and point them at localhost:3000s
