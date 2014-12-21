@@ -1,0 +1,21 @@
+{
+  "name": "as-you-type",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Puckett <michaelcpuckett@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mustache": "~0.8.2",
+    "moment": "~2.8.4",
+    "superagent": "~0.21.0",
+    "socket.io-client": "~1.2.1"
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+    <title>as-you-type prototype</title>
+    <link href="/styles/app.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="grid grid-1of1">
+    <input class="Messages-input" placeholder="Type here...">
+</div>
+<div class="grid grid-1of2">
+    <div class="Messages" data-user="self" data-display-name="You"></div>
+</div>
+<div class="grid grid-1of2">
+    <div class="Messages" data-user="partner" data-display-name="Partner"></div>
+</div>
+
+<script id="Messages" src="/templates/ChatMessages.mustache" type="text/mustache"></script>
+<script src="/third-party/superagent/superagent.js"></script>
+<script src="/third-party/moment/moment.js"></script>
+<script src="/third-party/socket.io-client/socket.io.js"></script>
+<script src="/scripts/util/swiper.js"></script>
+<script src="/third-party/mustache/mustache.js"></script>
+<script src="/scripts/ViewController.js"></script>
+<script src="/scripts/ChatMessagesViewController.js"></script>
+<script src="/scripts/app.js"></script>
+</body>
+</html>
