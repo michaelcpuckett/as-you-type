@@ -13,7 +13,6 @@ ViewController.prototype.init = function (elem, tpl, events) {
 
     Object.observe(this.data, function (change) {
         this.render();
-        (this.onRender) && this.onRender();
     }.bind(this));
 
     for (eventType in events) {
@@ -29,4 +28,5 @@ ViewController.prototype.init = function (elem, tpl, events) {
 }
 ViewController.prototype.render = function () {
     this.elem.innerHTML = Mustache.render(this.template, this.data);
+    (this.onRender) && this.onRender();
 };
